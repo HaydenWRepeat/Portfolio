@@ -194,4 +194,59 @@ a:hover {
 hr {
   border-top: 5px double;
 }
+
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  height: 500px;
+  width: 85vw;
+  margin: 0 auto;
+}
+
+.resume .resume-selector {
+  width: 25%;
+  height: 100%;
+  background-color: lightgray;
+  color: #00a2ff;
+}
+
+.resume .resume-selector * {
+  height: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.resume .resume-selector *:hover {
+  -webkit-transition: 1s;
+  transition: 1s;
+  color: #15ff00;
+}
+
+.resume .resume-content {
+  background-color: lightgrey;
+  display: -ms-grid;
+  display: grid;
+}
+
+.resume .resume-content * {
+  position: relative;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+  width: 75%;
+  opacity: 0;
+  background-color: red;
+}
 /*# sourceMappingURL=style.css.map */

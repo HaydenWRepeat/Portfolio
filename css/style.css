@@ -203,13 +203,16 @@ hr {
   height: 500px;
   width: 85vw;
   margin: 0 auto;
+  border: 5px solid grey;
+  border-radius: 50px;
 }
 
 .resume .resume-selector {
   width: 25%;
   height: 100%;
-  background-color: lightgray;
   color: #00a2ff;
+  border: 3px solid grey;
+  border-radius: 43px;
 }
 
 .resume .resume-selector * {
@@ -232,7 +235,6 @@ hr {
 }
 
 .resume .resume-content {
-  background-color: lightgrey;
   display: -ms-grid;
   display: grid;
 }
@@ -246,7 +248,26 @@ hr {
   -ms-grid-row-span: 1;
   grid-row: 1/2;
   width: 75%;
-  opacity: 0;
-  background-color: red;
+  background-color: black;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h2.projects-section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

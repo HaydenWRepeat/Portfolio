@@ -196,11 +196,14 @@ hr{
   height: 500px;
   width: 85vw;
   margin: 0 auto;
+  border: 5px solid grey;
+  border-radius: 50px;
   .resume-selector{
     width: 25%;
     height: 100%;
-    background-color: lightgray;
     color: $primary-color;
+    border: 3px solid grey;
+    border-radius: 43px;
     *{
       height: 25%;
       display: flex;
@@ -214,16 +217,25 @@ hr{
   }
 
   .resume-content{
-    background-color: lightgrey;
     display: grid;
     *{
       position: relative;
       grid-column: 1/2;
       grid-row: 1/2;
       width: 75%;
-      opacity: 0;
-      background-color: red;
+      background-color: black;
     }
   }
 }
 
+form{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+h2.projects-section-header{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}

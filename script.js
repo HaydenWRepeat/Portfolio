@@ -1,8 +1,8 @@
 'use script'
 
-$(function(){
+$(function () {
 
-    $(`.resume .resume-selector div`).on(`click`, function(){
+    $(`.resume .resume-selector div`).on(`click`, function () {
 
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~TABS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
         //remove the active from the old one
@@ -11,19 +11,20 @@ $(function(){
         $(this).addClass(`active`)
 
         //~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~PANELS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~//
-        
+
         // figure out which panel we want to show
         let $resumeConetentShow = $(this).attr(`rel`);
 
         //hide the current panel
         $(".resume").find(`.resume-content .active`).slideUp(300, showResumeContent);
-        
+
         //find the next and display it
-        function showResumeContent(){
+        function showResumeContent() {
             $(this).removeClass(`active`);
-            $(`#${$resumeConetentShow}`).show(300, function(){
+            $(`#${$resumeConetentShow}`).show(300, function () {
                 $(this).addClass(`active`);
             })
         }
     })
 })
+
